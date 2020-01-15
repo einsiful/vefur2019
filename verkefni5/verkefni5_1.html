@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Verkefni 4.2 Efnisyfirlit og tenglar</title>
+    <style type="text/css"></style>
+    <!-- veljið leturgerð af http://fonts.google.com-->
+    <link rel="stylesheet" href="verkefni5_1.css">
+  </head>
+  <body id=" ">
+    <header>
+        <nav>
+            <a href="#" class="nav-toggle-btn"></a>
+            <img src="visir.gif" alt="">
+            <ul>
+                <dl class="navbar"> 
+                <li><a href="#Video">Video</a></li>
+                <li><a href="#Maps">Maps</a></li>
+                <li><a href="#Photoalbum">Photoalbum</a></li>
+                <li><a href="https://nam.inna.is/api/Attachment/DownloadAttachment/1638588/9?student=1">VEFÞ1VG05</a></li>
+                </dl>
+            </ul>  
+        </nav>
+                <div class="content">
+                  <img src="logo.svg" alt="">
+                  <span>VERKEFNI 5</span>
+                </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script type="text/javascript">
+                
+                (function() {
+                    
+                    var bodyEl = $('body'),
+                        navToggleBtn = bodyEl.find('.nav-toggle-btn');
+                    
+                    navToggleBtn.on('click', function(e) {
+                        bodyEl.toggleClass('active-nav');
+                        e.preventDefault();
+                    });      
+                })();  
+            </script>
+      </div>
+    </header>
+    <div class="main bot content" id="Innri tenglar">
+        <section class="container">
+        <h1>Um mig</h1>
+        <img src="eg.svg" class="eg">
+        <p class="ummig">hæ<strong>EINAR ÁRNI BJARNASON</strong> heiti ég, emailið mitt er einar(hjá)bjarni.is og er 17 ára er kominn með bílpróf, það sem ég geri er að ég vinn á dominos og er að drukkna í lærdómi.</p>
+        <h1>ÁHUGAMÁL</h1>
+        <p>Ég hef rosalega gaman að ferðast um heimin og ég hef farið tið. Spánar, Eistlands, Ameríku, Noregs, Danmerkur. Er hinns vegar að fara til Mexikó</p>
+        <h1>Kennara ferillin minn</h1>
+        <p>Fyrsti kennarinn min heitir tjörvi hann kendi mér í fyrsta bekk til annan bekk. síðan í 4 til 6 bekk kendi helga birna mér, frá 7 til 8 bekk kendi inga, og frá 9 til 10 bekk kendi þórarinn mér. </p>
+      </section>
+    </div>
+    <div class="main bot content" id="Video">
+      <section class="container">
+        <div>
+            <h3 class=" ">Video</h3>
+            <p>þetta er video</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/a8CKLkY6tNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div>
+          <p>ég hef engan húmor fyrir þessu því ég vinn á dominos og það er bannað að vera að svinlda á kerfinu</p>
+          <p>Hér er rosalega skemmtilegt lag sem ég hlusta á alla daga til að koma mér í gott skap</p>
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          <p><a href=" ">Efst á síðu</a></p>
+        </div>
+      </section>
+    </div>
+    <div class="main bot content" id="Maps">
+      <section class="container" >
+          <h3 class=" ">Maps</h3>
+          <P>ef þu lest þetta þá bý ég hér</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1744.4797663268953!2d-21.965950983528394!3d64.0725389835618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d60c58ba4b5bf3%3A0x23ab9949c3c6c982!2sHellisgata%2033%2C%20Hafnarfjordur!5e0!3m2!1sen!2sis!4v1572610568263!5m2!1sen!2sis" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <p><a href=" ">Efst á síðu</a></p>
+      </section>
+    </div>
+    <div class="main bot content" id="Photoalbum">
+      <section class="container">
+          <h3 class=" ">Photoalbum</h3>
+            <p>Hérna er photo album sem ég setti saman</p>
+            <img src="photo1.jpg" alt="photo1">
+            <img src="photo2.jpg" alt="photo2">
+            <img src="photo3.jpg" alt="photo3">
+          <p><a href=" ">Efst á síðu</a></p>
+      </section>
+    </div>
+      <footer>
+        <div class="content">
+              <ul>
+                  <dl class="fotur"> 
+                  <li><a href="#Video">Video</a></li>
+                  <li><a href="#Maps">Maps</a></li>
+                  <li><a href="#Photoalbum">Photoalbum</a></li>
+                  </dl>
+              </ul>  
+          <p class="copy">&nbsp;&copy; 2019 ---</p>
+          <!--tengill með absolute staðsetningu -->
+          <a href=" " class="topbutt" title="Efst á síðu"> &#8679; </a>
+        </div>
+    </footer>
+  </body>
+</html>

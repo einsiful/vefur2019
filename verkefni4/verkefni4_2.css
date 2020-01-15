@@ -1,0 +1,138 @@
+* { box-sizing: border-box }
+
+body {
+    margin: 0; /* tek út sjálgefið 10px margin */
+    /* font-family: ;*/
+    font: 400 1em/1.5 sans-serif; /* samsett skipun: weight/height, size, family */
+    background-color:#03438A;
+  }
+.verkefni{
+    margin-left: 300px;
+}
+.topnav{
+    margin-left: 300px;
+}
+.innermenu{
+  position: relative;
+  top: 20px;
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    text-align: center;
+  }
+  
+  .navbar li {
+    float: left;
+    border-right:1px solid #bbb;
+  }
+  
+  .navbar li:last-child {
+    border-right: none;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+  h1 {
+    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 2.5em;
+}
+header h1,header a,footer,footer a {
+    color:white;
+    text-decoration: none;
+}
+.navdiv{
+    margin: 70px;
+}
+.container {
+  max-width: 60em; /*960px = fartölvur*/
+  margin: 0 auto; /* top+bottom og left+right */
+  padding: 0;
+}
+/* grid */
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.col-4 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.gap-4 {
+    grid-gap: 4em
+}
+blockquote{
+  padding:10px;
+  background-color:rgba(255, 255, 255, 30%);
+}
+.middle{  
+  padding:20px;
+  background-image: linear-gradient( #F5D27F, #F5F1D3);
+}
+ul{
+  list-style: none;
+}
+.jumpbox{
+  width: 100%;
+}
+.header{
+  background-color:#03438A;}
+.footer{
+  background-color: rgb(103, 103, 250);
+}
+.topbutt{
+  color:blue;
+  position: fixed;
+  right:10px;
+  bottom:10px;
+  padding:5px 8px;
+  border-radius:50%;
+  border:1px solid white;
+  background-color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.top{
+  min-height: 600px;
+  height: 80vh;
+  padding-top:20px;
+}
+.bot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.main{ 
+  background-image:linear-gradient(#F3D385,#F7E7B4);
+}
+.top a{
+  display:inline;
+  border-right:1px solid white;
+  padding:10px 21.5px;;
+  color:white;
+  text-decoration: none;
+}

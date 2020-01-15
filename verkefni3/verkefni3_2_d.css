@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+*{
+  box-sizing: border-box;
+}
+body,html {
+  margin: 40px;
+  height: 90%;
+  background-color: rgb(207, 205, 205);
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 25% 25%;
+  grid-template-rows: 10% 30% auto 10%;
+  grid-template-areas:
+    " nav nav nav "
+    " header header header "
+    " main article aside "
+    " footer footer footer ";
+}
+
+
+header {
+  margin:0;
+  padding:0;
+  grid-area: header;
+  background-image: linear-gradient(rgb(63, 53, 148),black,rgb(63, 53, 148));
+  border-width: 1px 1px 1px 1px;  
+}
+header ul{
+  margin:0;
+  padding:0;
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style-type: none;
+  height:100%;
+
+}
+
+
+#font {
+  margin:0;
+  padding:10%;
+  font-family: 'Anton', sans-serif;
+  font-size: 70px;
+  color: white;
+  justify-content: flex-end;
+}
+
+nav {
+  grid-area: nav;
+  background-image: linear-gradient(rgb(43, 41, 41),rgb(63, 53, 148));
+  border-width: 0px 1px 1px 1px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(165, 165, 165);
+}
+
+article {
+  grid-area: article;
+  background-color: gray;
+  border-width: 0px 1px 0px 1px;
+}
+aside{
+  grid-area: aside;
+  background-color: grey;
+  border-width: 0px 1px 0px 0px;
+}
+
+footer {
+  grid-area: footer;
+  background-image: linear-gradient(rgb(63, 53, 148),white,rgb(63, 53, 148));
+  border-width: 1px 1px 1px 1px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+p, h4 {
+  margin: 10px;
+}
+
+nav ul, footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  list-style-type: none;
+}
+
+li a {
+  color: rgb(121, 121, 121);
+}
+
+.border{
+  border: none;
+  padding:10px;
+  margin:10px;
+}
